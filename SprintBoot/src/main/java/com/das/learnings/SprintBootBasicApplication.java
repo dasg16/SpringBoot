@@ -9,9 +9,10 @@ public class SprintBootBasicApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(SprintBootBasicApplication.class, args);
-		
-		DasFamily dasFamily= context.getBean(DasFamily.class);
+
+		DasFamily dasFamily = context.getBean(DasFamily.class);
 		dasFamily.printWelcome();
+		dasFamily.displayNames();
 	}
 
 }
